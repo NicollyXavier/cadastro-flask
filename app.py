@@ -117,7 +117,7 @@ def enviar_reset():
     conn.close()
 
     # Simulando envio de link
-    link = f"http://127.0.0.1:5000/resetar-senha/{token}"
+    link = f"https://cadastro-usuarios-y4hg.onrender.com/resetar-senha/{token}"
 
     return f"Link de recuperação: <a href='{link}'>Clique aqui</a>"
 
