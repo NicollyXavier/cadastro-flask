@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Cadastro{% endblock %}
+
+{% block content %}
+
+<div class="card shadow p-4 mx-auto" style="max-width: 400px;">
+    
+    <h3 class="text-center mb-4">Cadastro de Usuário</h3>
+
+    <form action="/cadastrar" method="POST">
+        
+        <div class="mb-3">
+            <input type="text" name="nome" class="form-control" placeholder="Nome" required>
+        </div>
+
+        <div class="mb-3">
+            <input type="email" name="email" class="form-control" placeholder="Email" required>
+        </div>
+
+        <div class="mb-3">
+            <input type="password" name="senha" class="form-control" placeholder="Senha" required>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">
+            Cadastrar
+        </button>
+        <hr>
+
+        <div class="text-center">
+            <p class="mb-2">Já tem uma conta?</p>
+            <a href="/login" class="btn btn-primary w-100">
+                Fazer login
+            </a>
+        </div>
+    </form>
+
+</div>
+
+{% endblock %}

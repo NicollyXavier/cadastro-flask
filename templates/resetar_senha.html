@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card p-4 mx-auto" style="max-width:400px;">
+    <h4 class="text-center">Nova senha</h4>
+
+    <form method="POST">
+        <input type="password" name="senha" class="form-control mb-3" placeholder="Nova senha" required>
+        <button class="btn btn-success w-100">Salvar</button>
+    </form>
+</div>
+
+{% endblock %}

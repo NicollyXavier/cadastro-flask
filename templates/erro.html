@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Erro{% endblock %}
+
+{% block content %}
+
+<div class="card shadow p-4 mx-auto text-center" style="max-width: 400px;">
+    
+    <h4 class="text-danger mb-3">Erro</h4>
+
+    <p>{{ mensagem }}</p>
+
+    <a href="/" class="btn btn-primary mt-3">
+        Voltar para cadastro
+    </a>
+
+</div>
+
+{% endblock %}

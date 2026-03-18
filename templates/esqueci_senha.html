@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card p-4 mx-auto" style="max-width:400px;">
+    <h4 class="text-center">Recuperar senha</h4>
+
+    <form action="/enviar-reset" method="POST">
+        <input type="email" name="email" class="form-control mb-3" placeholder="Seu email" required>
+        <button class="btn btn-primary w-100">Enviar</button>
+    </form>
+</div>
+
+{% endblock %}
